@@ -1,3 +1,191 @@
+/* Reset */
+
+
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, address, del, em, img, q, small, strike, strong, sub, sup, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, main, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+main, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
 body {
-  background: red;
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.group:before,
+.group:after {
+    content: " "; 
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+ 
+.group {
+    *zoom: 1;
+}
+
+* {
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+
+/* DXW Colours */
+
+$dxwgrey: #6D6E70;
+$dxwdarkblue: #006A97;
+$dxwlightblue: #1AA3DD; 
+
+/* DXW Calculator */
+
+
+html {
+  font-size: 62.5%;
+  font-family: "helvetica neue", arial, sans-serif;
+  font-weight: 200;
+  background: #fff;
+  border-top: 10px solid $dxwlightblue;
+}
+
+body {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 2em;
+  max-width: 58em;
+  margin: auto;
+}
+
+.header {
+  padding: 0 0 2em 0;
+  text-align: center;
+
+  h1 {
+    margin: 1em;
+    font-size: 3.6rem;
+  }
+}
+
+
+.logo {
+  width: 200px;
+  margin: auto;
+}
+
+
+.calculator {
+
+  padding: 1em;
+  background: #f4f4f4;
+  box-shadow: 0 0 3px #ccc;
+
+  .form-row {
+    padding: 1em 0;
+    border-bottom: 1px solid $dxwgrey;
+    clear: both;
+
+  }
+
+  .form-label {
+    width: 50%;
+    float: left;
+    padding: 0 2em 0 0;
+  }
+
+  .form-input {
+    width: 40%;
+    float: left;
+  }
+
+  .form-feedback {
+    width: 10%;
+    float: left;
+    text-align: right;
+    font-size: 2.4rem;
+  }
+
+
+  .form-label label {
+    color: $dxwdarkblue;
+    font-size: 2.4rem;
+
+       span {
+      padding: 1em 0;
+      color: $dxwgrey;
+      font-size: 1.6rem;
+      display: block;
+    }
+  }
+}
+
+.totals {
+  padding: 2em 0;
+  text-align: right;
+  font-size: 2.4rem;
+  color: $dxwlightblue;
+  border-bottom: 1px solid $dxwgrey;
+
+  span {
+    font-size: 3.6rem
+  }
+
+}
+
+.breakdown > div {
+  width: 33.33333%;
+  float: left;
+  text-align: center;
+}
+
+
+.breakdown {
+  padding: 2em 0;
+
+  h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    padding: 0 0 1em 0;
+  }
+
+
+  h3 {
+    font-size: 2.4rem;
+    color: $dxwlightblue;
+    margin: 1em 0;
+  }
+
 }

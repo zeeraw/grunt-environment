@@ -1,9 +1,202 @@
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="./style/main.css">
-    <script src="http://localhost:35729/livereload.js"></script>
-  </head>
-  <body>
-    Welcome!
-  </body>
+<head>
+  <link rel="stylesheet" type="text/css" href="./style/main.css">
+  <script src="http://localhost:35729/livereload.js"></script>
+  <title>GovPress Hosting Calculator</title>
+</head>
+<body>
+
+
+  <header role="banner" class="header group">
+    <div class="logo">
+      <img src="dxw-logo.svg" alt="dexterous digital">
+    </div>
+    <h1>GovPress Hosting Calculator</h1>
+  </header>
+
+  <main>
+
+    <section class="calculator group">
+
+      <form>
+
+        <div class="form-row group">
+
+          <div class="form-label">
+            <label for="multi-site">
+              Is your site a multisite?
+              <span>Short but concise explanation of the difference between multi site or single site.</span>
+            </label>
+          </div>
+
+          <div class="form-input">
+            <label for="singlesite">Yes <input type="radio" value="singlesite" name="singlesite"></label>
+            <label for="multisite">No <input type="radio" value="multisite" name="multisite"></label>
+          </div>
+
+          <div class="form-feedback">
+            <span>&pound;100</span>
+          </div>
+
+        </div> <!-- end form row -->
+
+        <div class="form-row group">
+
+          <div class="form-label">
+            <label for="visits">
+              Visits per day?
+              <span>Take an average from the last three months.</span>
+            </label>
+          </div>
+
+          <div class="form-input">
+            <select>
+              <option>0 to 100000</option>
+              <option>100000 to 200000</option>
+              <option>200000 to 300000</option>
+              <option>300000 to 400000</option>
+            </select>
+
+          </div>
+
+          <div class="form-feedback">
+            <span>&pound;500</span>
+          </div>
+
+        </div> <!-- end form row -->
+
+        <div class="form-row group">
+
+          <div class="form-label">
+            <label for="visits">
+              Number of plugins?
+              <span>These add additional functionality to a default Wordpress site.</span>
+            </label>
+          </div>
+
+          <div class="form-input">
+
+            <input type="number" value="3" size="3">
+
+          </div>
+
+          <div class="form-feedback">
+            <span>&pound;150</span>
+          </div>
+
+        </div> <!-- end form row -->
+
+        <div class="form-row group">
+
+          <div class="form-label">
+            <label for="visits">
+              Number of themes?
+              <span>A minimum of one theme is required to make the site look pretty.</span>
+            </label>
+          </div>
+
+          <div class="form-input">
+
+            <input type="number" value="1" size="3">
+
+          </div>
+
+          <div class="form-feedback">
+            <span>&pound;100</span>
+          </div>
+
+        </div> <!-- end form row -->
+
+        <div class="form-row group">
+
+          <div class="form-label">
+            <label for="visits">
+              Number of Admins?
+              <span>The number of people who have access to the admin section of the site. A minimum of one is required.</span>
+            </label>
+          </div>
+
+          <div class="form-input">
+
+            <input type="number" value="3" size="3">
+
+          </div>
+
+          <div class="form-feedback">
+            <span>&pound;300</span>
+          </div>
+
+        </div> <!-- end form row -->
+
+        <div class="form-row group">
+
+          <div class="form-label">
+            <label for="public-private">
+              Public or Private?
+              <span>A private site is for internal use only - and should be used where confidential information is displayed.</span>
+            </label>
+          </div>
+
+          <div class="form-input">
+            <label for="public">Public <input type="radio" value="public" name="public"></label>
+            <label for="private">Private <input type="radio" value="private" name="private"></label>
+          </div>
+
+          <div class="form-feedback">
+            <span>&pound;500</span>
+          </div>
+
+        </div> <!-- end form row -->
+
+      </form>
+
+      <div class="totals">
+        <p>Cost (per month) <span>&pound;1500</span></p>
+      </div>
+
+      <div class="breakdown group">
+        <header>
+          <h2>Cost Breakdown</h2>
+        </header>
+        <div class="server">
+          <img src="server.png" alt="">
+          <h3>2 Servers</h3>
+          <ul>
+            <li>Intel Quad Core 2.4Ghz</li>
+            <li>16GB Ram</li>
+            <li>512 Level 2 Cache</li>
+            <li>1TB Disk</li>
+            <li>Cent OS</li>
+          </ul>
+        </div>
+
+        <div class="balence">
+
+          <img src="balance.png" alt="">
+          <h3>1 Load Balancer</h3>
+          <ul>
+            <li>Designed to spread the load between servers</li>
+            <li>Handles traffic spikes with ease</li>
+          </ul>
+
+        </div>
+
+        <div class="support">
+
+          <img src="support.png" alt="">
+          <h3>24/7 Support</h3>
+          <ul>
+            <li>Engineers on hand 24/7</li>
+            <li>Internal monitoring alerts</li>
+            <li>Daily Site &amp; Database Backups</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
 </html>
